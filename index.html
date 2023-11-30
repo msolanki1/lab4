@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sunset Sunrise Dashboard</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sunset Sunrise Dashboard</h1>
+        <div class="background-image">
+            <img src="unplash.jpg" alt="Sunrise Sunset Image">
+        </div>
+
+        <div class="location-container">
+            <button id="CurrentLoc">Use Current Location</button>
+            <div class="search-container">
+                <input type="text" id="locationInput" placeholder="Enter Location">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+        <div id="resultContainer" style="display: none;">
+            <div class="result" id="todayResult">
+                <h3>Today</h3>
+                <div id="today_res"></div>
+            </div>
+            <div class="result" id="tomorrowResult">
+                <h3>Tomorrow</h3>
+                <div id="tom_res"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
